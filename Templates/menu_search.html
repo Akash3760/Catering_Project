@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block home-slider %} {% endblock home-slider %}
+
+{% block class %} class="sub_page" {% endblock %}
+
+{% block main %}
+
+<!-- search section -->
+
+<section class="search_section layout_padding-bottom">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h1>Search Results for "{{ query }}"</h1>
+            <ul>
+                {% for menu in menus %}
+                <li>
+                    <img alt="{{ menu.name }}" src="{{ menu.menu.url }}">
+                    <h2>{{ menu.name }}</h2>
+                </li>
+                {% empty %}
+                <li>No menu items found for "{{ query }}".</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- end search section -->
+
+{% endblock main %}

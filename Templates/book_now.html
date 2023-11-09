@@ -1,0 +1,89 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block home-slider %} {% endblock home-slider %}
+{% block class %} class="sub_page" {% endblock %}
+
+{% block main %}
+
+<!-- book section -->
+
+<section class="book_section layout_padding">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Book Now
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form_container">
+                    <form action="{% url 'book_now' %}" method="post">
+                        {% csrf_token %}
+                        <div>
+                            <input class="form-control" id="name" name="name" placeholder="Name" required type="text">
+                        </div>
+                        <div>
+                            <input class="form-control" id="number" name="number" placeholder="Phone Number"
+                                   required type="text">
+                        </div>
+                        <div>
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email"/>
+                        </div>
+                        <div>
+                            <select class="form-control nice-select wide" id="enquiry" name="enquiry">
+                                <option disabled selected value="">
+                                    Nature Of Enquiry
+                                </option>
+                                <option value="Wedding">
+                                    Wedding
+                                </option>
+                                <option value="Birthday">
+                                    Birthday
+                                </option>
+                                <option value="House Party">
+                                    House Party
+                                </option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="form-control nice-select wide" id="person" name="person">
+                                <option disabled selected value="">
+                                    Guest Count
+                                </option>
+                                <option value="50-200">
+                                    50-200 ppl
+                                </option>
+                                <option value="200-500">
+                                    200-500 ppl
+                                </option>
+                                <option value="500+">
+                                    500+ ppl
+                                </option>
+                            </select>
+                        </div>
+                        <div class="btn_box">
+                            <button>
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="map_container ">
+                    <div class="contact-map">
+                        <iframe allowfullscreen="allowfullscreen" aria-hidden="false" frameborder="0" height="450"
+                                loading="lazy"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.5189865812495!2d88.33522437483559!3d22.484703236187027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027091429df38d%3A0x9b4c39621f8fa939!2s7%2C%20Karunamoyee%20Ghat%20Rd%2C%20Sarat%20Pally%2C%20Ambagan%2C%20Kolkata%2C%20West%20Bengal%20700082!5e0!3m2!1sen!2sin!4v1699105696365!5m2!1sen!2sin"
+                                style="border: 0;" tabindex="0" width="600">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end book section -->
+
+{% endblock %}

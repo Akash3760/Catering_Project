@@ -1,0 +1,20 @@
+/* Define the animation */
+@keyframes dropdownAnimation {
+    from {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    to {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the dropdown menu */
+.dropdown-menu.with-animation {
+    animation: dropdownAnimation 0.3s ease forwards;
+    transform-origin: top;
+    opacity: 0;
+}
+
+

@@ -1,0 +1,357 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block main %}
+
+<!-- identity section -->
+
+<section class="identity_section layout_padding">
+    <div class="container  ">
+        <div class="row">
+            <div class="col-md-6 ">
+                <div class="img-box">
+                    <img alt="" src="{% static 'images/about-img.png' %}">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            Food for Taste and Health.
+                        </h2>
+                    </div>
+                    <p>
+                        <strong>Welcome to the delicacy of Bengali Cuisine</strong>
+                    </p>
+                    <p>
+                        We at Anjali Caterer welcome you to our succulent delicacies of Bengal. We are based in
+                        Kolkata, the city of hearts. People here steal hearts by offering delicious foods.
+                        And we are no different as we have a similar mission.
+                    </p>
+                    <p>
+                        Whenever people hear Bengali cuisine, they seem to think about sweet desserts, spicy and
+                        aromatic tasty dishes. We in Anjali Caterer have managed to provide the same taste of Bengal
+                        to our clients. No matter whatever, the occasion is we believe that the best quality of
+                        food offers the most satisfaction to the guests. From weddings to birthday parties and
+                        corporate events, we provide the best quality food in Kolkata.
+                    </p>
+                    <p>
+                        We innovate with our clients. We also offer the best traditional Bengali dishes in Kolkata.
+                        We bring a fusion to our traditional dishes mixing different spices and styles in them.
+                        Although people tend to eat the same food in houses and restaurants occasionally,
+                        we in Anjali Caterer have the best chefs in Kolkata to serve the invitees with several
+                        innovative and authentic dishes. We also hold a high rank among the best Bengali caterer
+                        in Kolkata.
+                    </p>
+                    <p>
+                        <strong>Why we are the best caterer in Kolkata</strong>
+                    </p>
+                    <p>
+                        Finding the best catering services is not an easy task. there are many fundamental things
+                        involve like the varieties of the menu, budget, quality of food, etc. Here we are going to
+                        tell you why you should choose us, as we offer-
+                    </p>
+                    <p>
+                        <strong>Quality food and versatile menu</strong>
+                    </p>
+                    <p>
+                        We consider the health-conscious demands of our potential customers, and we do not compromise
+                        with the nutrition, quality, and flavour of the food. Also, we always try to match the
+                        expectation of our customers adjusting the preferable taste and spices to the choice of food.
+                        Furthermore, we offer varieties of menus for different occasions so that there are alternatives
+                        available for our customers. We offer various Indian dishes as per our client’s selection.
+                    </p>
+                    <p>
+                        <strong>Budget-friendly</strong>
+                    </p>
+                    <p>
+                        For anyone looking for catering services, the budget is always in mind. Our budget is extremely
+                        basic. According to the spending requirements of our clients, we offer the best menu available
+                        for our guests. People who choose us know that we are the most budget-friendly wedding caterers
+                        in Kolkata.
+                    </p>
+                    <a href="{% url 'about' %}">
+                        Interested? &nbsp;
+                        <i class="fa fa-cutlery"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end identity section -->
+
+<!-- gallery section -->
+
+<section class="gallery_section layout_padding-bottom">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h1>
+                Our Gallery
+            </h1>
+            <h3>
+                Check Our Latest Events Video, Recipes & Photos
+            </h3>
+            <hr>
+        </div>
+
+        <!-- video div start -->
+
+        <div class="video_section layout_padding-bottom">
+            <div class="container">
+                <div class="carousel-wrap row ">
+                    <div class="owl-carousel client_owl-carousel">
+                        <div class="item">
+                            <div class="img-box">
+                                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen frameborder="0"
+                                        height="315" src="https://www.youtube.com/embed/lo3Z7bWQ9Co?si=bdt3odlrOHaHJMSo"
+                                        title="YouTube video player"
+                                        width="560">
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class="caption">
+                                <p style="color:white">Wedding Catering</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-box">
+                                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                        frameborder="0"
+                                        height="315" src="https://www.youtube.com/embed/aS3pE_m-u7U?si=r8v0jQOCzBVet5Re"
+                                        title="YouTube video player"
+                                        width="560">
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class="caption">
+                                <p style="color:white">Wedding Catering</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-box">
+                                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                        frameborder="0"
+                                        height="315" src="https://www.youtube.com/embed/l_8Nr2DA7i4?si=3dx2gbUSXtt9_JPJ"
+                                        title="YouTube video player"
+                                        width="560">
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class="caption">
+                                <p style="color:white">Birthday Party</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-box">
+                                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                        frameborder="0"
+                                        height="315" src="https://www.youtube.com/embed/c_ZZIHKn4Hg?si=IHg65H4tWHq3Puyr"
+                                        title="YouTube video player"
+                                        width="560">
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class="caption">
+                                <p style="color:white">House Warming</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- video div end -->
+
+        <!-- image div start -->
+
+        <div class="row image-list">
+            {% for image in images %}
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 image-item">
+                <img alt="{{ image.title }}" class="img-fluid" src="{{ image.image.url }}"/>
+            </div>
+            {% empty %}
+            <p>No images uploaded yet.</p>
+            {% endfor %}
+        </div>
+
+        <!-- image div end -->
+
+    </div>
+</section>
+
+<!-- end gallery section -->
+
+<!-- book section -->
+
+<section class="book_section layout_padding">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Book Now
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form_container">
+                    <form action="{% url 'book_now' %}" method="post">
+                        {% csrf_token %}
+                        <div>
+                            <input class="form-control" id="name" name="name" placeholder="Name" required type="text">
+                        </div>
+                        <div>
+                            <input class="form-control" id="number" name="number" placeholder="Phone Number"
+                                   required type="text">
+                        </div>
+                        <div>
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email"/>
+                        </div>
+                        <div>
+                            <select class="form-control nice-select wide" id="enquiry" name="enquiry">
+                                <option disabled selected value="">
+                                    Nature Of Enquiry
+                                </option>
+                                <option value="Wedding">
+                                    Wedding
+                                </option>
+                                <option value="Birthday">
+                                    Birthday
+                                </option>
+                                <option value="House Party">
+                                    House Party
+                                </option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="form-control nice-select wide" id="person" name="person">
+                                <option disabled selected value="">
+                                    Guest Count
+                                </option>
+                                <option value="50-200">
+                                    50-200 ppl
+                                </option>
+                                <option value="200-500">
+                                    200-500 ppl
+                                </option>
+                                <option value="500+">
+                                    500+ ppl
+                                </option>
+                            </select>
+                        </div>
+                        <div class="btn_box">
+                            <button>
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="map_container ">
+                    <div class="contact-map">
+                        <iframe allowfullscreen="allowfullscreen" aria-hidden="false" frameborder="0" height="450"
+                                loading="lazy"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.5189865812495!2d88.33522437483559!3d22.484703236187027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027091429df38d%3A0x9b4c39621f8fa939!2s7%2C%20Karunamoyee%20Ghat%20Rd%2C%20Sarat%20Pally%2C%20Ambagan%2C%20Kolkata%2C%20West%20Bengal%20700082!5e0!3m2!1sen!2sin!4v1699105696365!5m2!1sen!2sin"
+                                style="border: 0;" tabindex="0" width="600">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end book section -->
+
+<!-- client section -->
+
+<section class="client_section layout_padding-bottom">
+    <div class="container">
+        <div class="heading_container heading_center psudo_white_primary mb_45">
+            <h2>
+                What Says Our Customers
+            </h2>
+        </div>
+        <div class="carousel-wrap row ">
+            <div class="owl-carousel client_owl-carousel">
+                <div class="item">
+                    <div class="box">
+                        <div class="detail-box">
+                            <p>
+                                Awesome service, great food and courteous staff. Had used their services for the b'day
+                                party and absolutely satisfied on all aspects. The food quality is just awesome and the
+                                presentation was also excellent. Will surely recommend to my friends.
+                            </p>
+                            <h6>
+                                Debjani Paul
+                            </h6>
+                            <p>
+                                Kolkata
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="detail-box">
+                            <p>
+                                Food quality is awesome if you think about north indian food, please go for it.
+                                Especially gulabjamun they r the best&nbsp; All food items served hot. In short awesome
+                                service, all my guest joined our Wedding party loved d food.
+                            </p>
+                            <h6>
+                                Tushar Mandal
+                            </h6>
+                            <p>
+                                Kolkata
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="detail-box">
+                            <p>
+                                Thank you,<br> Your team is very professional, well-mannered and beautifully represented
+                                food area, made our daughters birthday dinner just perfect. Our guest appreciates
+                                everything about catering.
+                            </p>
+                            <h6>
+                                Aarohi Paria
+                            </h6>
+                            <p>
+                                Kolkata
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="box">
+                        <div class="detail-box">
+                            <p>
+                                Thank you,<br> Your team is very professional, well-mannered and beautifully represented
+                                food area, made our daughters birthday dinner just perfect. Our guest appreciates
+                                everything about catering.
+                            </p>
+                            <h6>
+                                Debashish Gupta
+                            </h6>
+                            <p>
+                                Kolkata
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end client section -->
+
+{% endblock %}

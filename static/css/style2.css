@@ -1,0 +1,64 @@
+/* Apply a black background and center align the content */
+.bottom-header_section {
+    background-color: #222831;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the phone numbers */
+.phone-text {
+    color: white; /* Text color for phone numbers */
+    text-decoration: none; /* Remove underlines from links */
+    display: inline-block; /* Display phone numbers on the same line */
+    margin: 20px; /* Add space between phone numbers */
+    transition: color 0.3s; /* Smooth color change on hover */
+    text-transform: uppercase;
+
+
+    /* Center the phone numbers vertically */
+    display: flex;
+    align-items: center;
+}
+
+.phone-text h5 {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+}
+
+.phone-text:hover {
+    color: #ffbe33; /* Change text color on hover (you can choose any color) */
+}
+
+/* Style social icons */
+.social-items {
+    display: inline-block;
+}
+
+/* Style social icons color */
+.social-items a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #222831;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border-radius: 100%;
+  margin: 0 2.5px;
+  font-size: 18px;
+}
+
+/* Add hover effect to social icons */
+.social-items a:hover {
+    color: #ffbe33; /* Change icon color on hover (you can choose any color) */
+}

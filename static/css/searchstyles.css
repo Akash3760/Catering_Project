@@ -1,0 +1,26 @@
+.user_option {
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #ffffff; /* Set the background to white */
+    border: 2px solid #ffbe33; /* Set a yellow border */
+    border-radius: 5px; /* Add a border radius for rounded corners */
+}
+
+.nav_search-input {
+    border: none;
+    background: none;
+    font-size: 18px;
+    flex: 1; /* Allow the input to expand to fill available space */
+    margin-right: 5px; /* Add margin to separate the input and icon */
+}
+
+.search-icon {
+    color: #ffbe33; /* Set the color of the search icon to yellow */
+    font-size: 18px;
+    cursor: pointer;
+}
+

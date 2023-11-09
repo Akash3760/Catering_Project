@@ -1,0 +1,26 @@
+/* CSS for scroll-up button */
+.scrollup {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 30%;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    transition: background-color 0.3s; /* Add a smooth transition for the background color */
+    scroll-behavior: smooth 0.5s; /* Enable smooth scrolling behavior */
+}
+
+/* Style for the FontAwesome icon */
+.scrollup i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+/* Hover effect */
+.scrollup:hover {
+    background-color: #800000; /* Change the background color on hover */
+    color: #ffffff;
+}

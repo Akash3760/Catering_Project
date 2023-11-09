@@ -1,0 +1,27 @@
+/* Customize carousel styles */
+#home-slider {
+    max-width: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-caption h3 {
+    font-size: 24px;
+}
+
+.carousel-caption p {
+    font-size: 16px;
+}
+
+/* Reduce the size of images */
+.carousel-item img {
+    max-width: 100%; /* You can adjust this value to make the images smaller */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* You can add more custom styles as needed */

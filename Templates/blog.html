@@ -1,0 +1,157 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block home-slider %} {% endblock home-slider %}
+
+{% block class %} class="sub_page" {% endblock %}
+
+{% block main %}
+
+<!-- reply section -->
+
+<section class="reply layout_padding">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Leave a Reply
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form_container">
+                    <form action="{% url 'comment_views' %}" id="comment-form" method="post">
+                        {% csrf_token %}
+                        <div>
+                            <label for="comment">Comment<span class="required">*</span></label>
+                            <textarea class="form-control" id="comment" name="comment"
+                                      placeholder="Write Something..." required></textarea>
+                        </div>
+                        <div>
+                            <label for="name">Name<span class="required">*</span></label>
+                            <input class="form-control" id="name" name="name" placeholder="Your name" required
+                                   type="text">
+                        </div>
+                        <div>
+                            <label for="email">Email<span class="required">*</span></label>
+                            <input class="form-control" id="email" name="email" placeholder="example@gmail.com" required
+                                   type="email">
+                        </div>
+                        <div class="btn_box">
+                            <button id="submitButton">Submit</button>
+                            <div id="success-message" style="display: none; color:red;"></div>
+                            <!-- Success message placeholder -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="comment_container1">
+                    <div class="col-md-6-1">
+                        <div class="comment">
+                            <h4 style="background-color: red; color: white;">
+                                2021 Wedding Menu Trends in Bengal
+                            </h4>
+                            <p>
+                                Date & Time: [24 July 2021] <br>
+                                <a href="{% url 'blog' %}">Leave a Comment</a>
+                            </p>
+                            <p style="text-align: justify;">
+                                Due to the Covid-19 pandemic in the year 2020 several weddings had to be called off and
+                                many couples had to press a pause on their wedding plans. But with new lockdown measures
+                                and government guidelines weddings are now off to a roaring start.
+                                <br>
+                            <div class="expandable-content" style="display: none;">
+                                <p style="text-align: justify;">
+                                    When it comes to planning a wedding irrespective of culture and place, the major
+                                    attention guests give to the wedding food menu. Wedding receptions in Bengal are
+                                    popular for the rich cuisines offered to the guests. <br><br> As the top Bengali
+                                    caterer in
+                                    Kolkata, our 2021 wedding menu contains the current trend of maintaining rich taste
+                                    considering health and quality top priorities. While choosing a food menu for your
+                                    wedding it is always better to consider one of the best Bengali caterers in Kolkata.
+                                    <br><br> In 2021 guests will be more inclined to look for trendy dishes on the menu.
+                                    The
+                                    experienced chefs in a qualified and professional catering service can help in
+                                    selecting the best wedding menu in 2021.
+                                </p>
+                            </div>
+                            <a href="#" id="readMoreLink">
+                                Read More
+                            </a>
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <h4 style="background-color: red; color: white;">
+                                Importance Of Healthy And Safe Food Hygiene
+                            </h4>
+                            <p>
+                                Date & Time: [24 July 2021] <br>
+                                <a href="{% url 'blog' %}">Leave a Comment</a>
+                            </p>
+                            <p style="text-align: justify;">
+                                Tell me how many of us used to wash our hands with handwash regularly before eating our
+                                food if it was not for the pandemic? Following proper hygiene, maintenance has been a
+                                newly adopted habit among many people in the world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end reply section -->
+
+<!-- JavaScript function to display the success message -->
+
+<script>
+    // JavaScript function to display the success message
+        function showSuccessMessage(message) {
+            var successMessage = document.getElementById('success-message');
+            successMessage.innerHTML = message;
+            successMessage.style.display = 'block';
+        }
+
+        // Check if a success message is available and call the function
+        var successMessage = "{{ success_message }}";
+        if (successMessage) {
+            showSuccessMessage(successMessage);
+        }
+
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+   $(document).ready(function() {
+    const $readMoreLink = $("#readMoreLink");
+    const $expandableContent = $(".expandable-content");
+
+    let isExpanded = false;
+
+    $readMoreLink.on("click", function(event) {
+        event.preventDefault();
+
+        if (isExpanded) {
+            // Collapse the content
+            $expandableContent.slideUp();
+            isExpanded = false;
+            $readMoreLink.text("Read More");
+        } else {
+            // Expand the content
+            $expandableContent.slideDown();
+            isExpanded = true;
+            $readMoreLink.text("Read Less");
+        }
+    });
+});
+
+
+
+
+
+</script>
+
+{% endblock main %}

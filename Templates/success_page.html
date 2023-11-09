@@ -1,0 +1,43 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block home-slider %} {% endblock home-slider %}
+
+{% block class %} class="sub_page" {% endblock %}
+
+{% block main %}
+
+<!-- success_page section -->
+
+<section class="about_section layout_padding">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 ">
+                <div class="img-box">
+                    <img alt="" src="{% static 'images/about-img.png' %}">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            Thank You , <br> for choosing our service
+                        </h2>
+                    </div>
+                    <p>
+                         <b>We will contact you soon.</b><br><br>
+                         For further information contact us.
+                    </p>
+                    <a href="{% url 'home' %}">
+                        Back to Home Page
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end success_page section -->
+
+{% endblock %}

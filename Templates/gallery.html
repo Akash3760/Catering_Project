@@ -1,0 +1,115 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block home-slider %} {% endblock home-slider %}
+
+{% block class %} class="sub_page" {% endblock %}
+
+{% block main %}
+
+<!-- gallery section -->
+
+<section class="gallery_section layout_padding-bottom">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h1>
+                Our Gallery
+            </h1>
+            <h3>
+                Check Our Latest Events Video, Recipes & Photos
+            </h3>
+            <hr>
+        </div>
+
+        <!-- video div start -->
+
+        <div class="video_section layout_padding-bottom">
+            <div class="container">
+                <div class="carousel-wrap row ">
+                    <div class="owl-carousel client_owl-carousel">
+                        <div class="item">
+                            <div class="img-box">
+                                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen frameborder="0"
+                                        height="315" src="https://www.youtube.com/embed/lo3Z7bWQ9Co?si=bdt3odlrOHaHJMSo"
+                                        title="YouTube video player"
+                                        width="560">
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class="caption">
+                                <p style="color:white">Wedding Catering</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-box">
+                                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                        frameborder="0"
+                                        height="315" src="https://www.youtube.com/embed/aS3pE_m-u7U?si=r8v0jQOCzBVet5Re"
+                                        title="YouTube video player"
+                                        width="560">
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class="caption">
+                                <p style="color:white">Wedding Catering</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-box">
+                                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                        frameborder="0"
+                                        height="315" src="https://www.youtube.com/embed/l_8Nr2DA7i4?si=3dx2gbUSXtt9_JPJ"
+                                        title="YouTube video player"
+                                        width="560">
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class="caption">
+                                <p style="color:white">Birthday Party</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-box">
+                                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                        frameborder="0"
+                                        height="315" src="https://www.youtube.com/embed/c_ZZIHKn4Hg?si=IHg65H4tWHq3Puyr"
+                                        title="YouTube video player"
+                                        width="560">
+                                </iframe>
+                            </div>
+                            <br>
+                            <div class="caption">
+                                <p style="color:white">House Warming</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- video div end -->
+
+        <!-- image div start -->
+
+        <div class="row image-list">
+            {% for image in images %}
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 image-item">
+                <img alt="{{ image.title }}" class="img-fluid" src="{{ image.image.url }}"/>
+            </div>
+            {% empty %}
+            <p>No images uploaded yet.</p>
+            {% endfor %}
+        </div>
+
+        <!-- image div end -->
+
+    </div>
+</section>
+
+<!-- end gallery section -->
+
+{% endblock main %}
