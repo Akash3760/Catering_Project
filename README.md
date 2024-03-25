@@ -65,4 +65,4 @@ If you'd like to contribute to the project, please follow these guidelines:
 This project is licensed under the MIT License.
 
 # Contact
-If you have any questions or need further assistance, please contact [akashranjannayak0@gmail.com].
+If you have any questions or need further assistance, please contact [akashnayak3462@gmail.com].
